@@ -4,36 +4,35 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-
-        int secretNumber = random.nextInt(100) + 1;
-
-        int attempts = 0;
-
-        boolean hasGuessed = false;
-
-        System.out.println("Welcome to the Guess the number game! Enter number in the range from 1 to 100");
-        int userChoice = scanner.nextInt();
-        // ++ - shot-hand quote
-        attempts++;
-
-        if(userChoice == secretNumber) {
-            hasGuessed = true;
-            System.out.println("Good sh*t , you've done it!");
-
-        }else if (userChoice != secretNumber) {
-            System.out.println("Bad sh*t , you didn't guess!");
-            System.out.println(userChoice);
-            System.out.println(secretNumber);
-        }else {
-            System.out.println("Get out of here");
-            System.out.println(userChoice);
-            System.out.println(secretNumber);
-        }
-
-        scanner.close();
-
-        // Cycle
+//        Random random = new Random();
+//
+//        int secretNumber = random.nextInt(100) + 1;
+//
+//        int attempts = 0;
+//
+//        boolean hasGuessed = false;
+//
+//        System.out.println("Welcome to the Guess the number game! Enter number in the range from 1 to 100");
+//        // scanner -  input
+//        int userChoice = scanner.nextInt();
+//        // ++ - shot-hand quote
+//        attempts++;
+//
+//        if(userChoice == secretNumber) {
+//            hasGuessed = true;
+//            System.out.println("Good sh*t , you've done it!");
+//
+//        }else if (userChoice != secretNumber) {
+//            System.out.println("Bad sh*t , you didn't guess!");
+//            System.out.println(userChoice);
+//            System.out.println(secretNumber);
+//        }else {
+//            System.out.println("Get out of here");
+//            System.out.println(userChoice);
+//            System.out.println(secretNumber);
+//        }
+//
+//        scanner.close();
 
         // ctrl + / or cmd + /
         // Variables + dataTypes
@@ -76,5 +75,47 @@ public class Main {
 //        }
 
 
+        // Cycle
+//        int i = 0 ;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+//        i++;
+
+//        for (int i = 0 ; i <= 10 ;i++) {
+//            System.out.println(i);
+//        }
+
+
+//    int i = 0;
+//
+//    while (i <= 10) {
+//        System.out.println(i);
+//        i++;
+//
+//    }
+//        boolean isRunning = true;
+//        int i = 0 ;
+//
+//
+//        while (isRunning) {
+//            System.out.println("Hi , mate ? How's it going ? What's your name ? ");
+//            String name = scanner.next();
+//            String expectedName = "John";
+//
+//            if(name.equals(expectedName)) {
+//                isRunning = false;
+//            }
+//
+//            System.out.println(i);
+//            i++;
+//
+//        }
     }
 }
