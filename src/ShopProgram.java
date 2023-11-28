@@ -60,10 +60,6 @@ class User {
         this.bag = new Product[13];
     }
 
-    public  int getMoney() {
-        return money;
-    }
-
     public boolean buyProduct(Product product) {
         if(money >= product.getPrice()) {
             money -= product.getPrice();
@@ -94,6 +90,10 @@ class User {
             }
 
         }
+    }
+
+    public int getMoney() {
+        return 0;
     }
 }
 

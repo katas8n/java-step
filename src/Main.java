@@ -1,9 +1,20 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+
+        Human<String , String> johnsPassword = new Human("Hello1231" , "k@i.ua");
+
+        System.out.println(johnsPassword.getPassword());
+        System.out.println(johnsPassword.getEmail());
+        Dog john = new Dog("John" , 23 , true , true);
+        System.out.println(john);
+        john.bark();
+
+
 //        Random random = new Random();
 //
 //        int secretNumber = random.nextInt(100) + 1;
@@ -224,7 +235,7 @@ public class Main {
 //        scanner.close();
 //        String model = scanner.next();
 
-        Car myCar2 = new Car("Audi" , "darkmagenta" , 2313, 4);
+//        Car myCar2 = new Car("Audi" , "darkmagenta" , 2313, 4);
 
     }
 }
